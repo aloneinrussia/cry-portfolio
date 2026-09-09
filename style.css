@@ -28,6 +28,9 @@ body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
     cursor: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -339,8 +342,13 @@ header {
 }
 
 .outline-text {
-    color: transparent;
-    -webkit-text-stroke: 1px #555;
+    color: rgba(255,255,255,.08);
+    -webkit-text-stroke: 1px rgba(255,255,255,.42);
+    text-shadow: none;
+}
+
+.hero h1 {
+    max-width: 720px;
 }
 
 .hero-description {
